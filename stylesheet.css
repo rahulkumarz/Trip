@@ -1,0 +1,234 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Montserrat', sans-serif;
+}
+.box{
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	border: 0.5px solid #000;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 10.12%, rgba(0, 0, 0, 0) 30.81%);
+}
+body{
+	background-image: linear-gradient(89.97deg, rgba(0, 0, 0, 0.5) 48.11%, rgba(0, 0, 0, 0) 99.98%), url(../1.jpg);
+	/*background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 10.12%, rgba(0, 0, 0, 0) 30.81%), url(../1.jpg);*/
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{
+	float:right;
+	list-style-type:none;
+   margin-top: 20px;
+	margin-right:50px;
+}
+ul li{
+	display:inline;
+}
+ul li a {
+	text-decoration:none;
+	font-size: 12px;
+	color: #B0C4DE;
+   padding: 5px 13px;
+	transition:0.6s ease;
+}
+ul li a:hover{
+	text-color: #B0C4DE;
+	color:#fff;
+}
+ul li.active a{
+	text-color: #B0C4DE;
+	color:#fff;
+}
+
+.logo img{
+	float: left;
+	width: 40px;
+	margin-top: 29px;
+	margin-left:85px;
+}
+.logo1 img{
+	float: left;
+	width: 25px;
+	margin-top: 40px;
+	margin-left:-32px;
+}
+.vector img{
+	float: left;
+	width: 35px;
+	margin-top: 55px;
+	margin-left:-65px;
+}
+
+.main{
+	max-width: 1500px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top:25%;
+	left:34.5%;
+}
+.title h1{
+	color:#fff;
+	font-family: 'Poiret One', cursive;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 64px;
+	line-height: 0px;
+	letter-spacing: 0.3em;
+}
+.title h4{
+	position: absolute;
+   width: 635px;
+   height: 148px;
+   left: -395px;
+   top: 90px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 40px;
+   letter-spacing: 0.05em; 
+   line-height: 45px;
+   color: #FFFFFF;
+}
+.title p{
+	position: absolute;
+   width: 533px;
+   height: 120px;
+   left: -395px;
+   top: 195px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 10px;
+   line-height: 43px;
+   letter-spacing: 0.2em;
+   color: #FFFFFF;
+}
+
+.button{
+   position: absolute;
+   color:white;
+   padding: 5px 20px;
+   text-align:center;
+   font-size: 15px;
+   font-family: 'Montserrat', sans-serif;
+   display: inline-block;
+   width: 140px;
+   height: 45px;
+   left: 70px;
+   top: 460px;
+   background: #1AA3A3;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0,0.50);
+   border-radius: 15px;
+}
+
+.rectangle{
+	position: absolute;
+   width: 140px;
+   height: 204px;
+   left: 1150px;
+   top: 280px;
+	background: rgba(255, 255, 255, 0.05);
+   backdrop-filter: blur(100px);
+   border-radius: 15px;
+}
+.img{
+	border-radius: 15px;
+   position: absolute;
+   width: 130px;
+   height: 190px;
+   left: 1155px;
+   top: 287px;
+   background: url(image.png);
+   backdrop-filter: blur(100px);
+}
+
+.cir{
+	position: absolute;
+   width: 50px;
+   height: 50px; 
+   left: 1225px;
+   top: 500px;
+   background: rgba(0, 0, 0, 0.35);
+   border: 2px solid rgba(255, 255, 255, 0.5);
+   border-radius: 50px;
+}
+.cir1{
+	position: absolute;
+	width: 50px;
+   height: 50px;
+   left: 1170px;
+   top: 500px;
+   border-radius: 50px;
+   background: rgba(0, 0, 0, 0.35);
+   border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.cir a{
+	position:absolute;
+	text-decoration:none;
+	font-size: 30px;
+	color:#fff;
+	left: 35%;
+   top: 9%;
+}
+.cir1 a{
+	position:absolute;
+	text-decoration:none;
+	font-size: 30px;
+	color:#fff;
+	left: 26%;
+   top: 9%;
+}
+
+.rating{
+	position: absolute;
+   top: 65.5%;
+	left: 18%;
+	transform: translate(-50%,,-50%);
+	transform:rotateY(180deg);
+	display:flex;
+}
+.rating input{
+   display: none;*/
+}
+.rating label{
+	display: block;
+	cursor: pointer;
+	width: 30px;
+}
+.rating label:before{
+	content:'\f005';
+	font-family: fontAwesome;
+   position: relative;
+   display: block;
+   font-size: 11px;
+   color: #fff;	
+}
+.rating label:after{
+	content:'\f005';
+	font-family: fontAwesome;
+   position: absolute;
+   display: block;
+   font-size: 11px;
+   color: yellow;	
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}  
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked  ~ label:after
+
+{
+	opacity: 1;
+}
